@@ -5,20 +5,19 @@ class HomePage extends StatefulWidget {
 
   @override
   _HomePageState createState() => new _HomePageState();
-
 }
 
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
         home: new Scaffold(
           appBar: new AppBar(
             title: new Text('首页'),
+            centerTitle:true,
             actions: <Widget>[
               new Container(
-
+                child:  new Text('首页'),
               )
             ],
           ),
@@ -26,7 +25,9 @@ class _HomePageState extends State<HomePage> {
               child: new Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  new Text('首页')
+                  new Text('首页'),
+                  new RaisedButton(onPressed: (){
+                  },child: new Text('点击'),)
                 ],
               )
           ),

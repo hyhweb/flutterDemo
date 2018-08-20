@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../global_config.dart';
+
 import '../list/focus.dart';
 
 class ListPage extends StatefulWidget {
@@ -17,6 +17,7 @@ class ListState extends State<ListPage> {
           child: new Scaffold(
               appBar: new AppBar(
               title: new Text('列表'),
+              centerTitle:true,
               bottom: new TabBar(
                 labelColor:Colors.white,
                 unselectedLabelColor: Colors.black,

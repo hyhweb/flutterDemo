@@ -15,7 +15,11 @@ class _ListDemoState extends State<FocusList>{
       leading: new CircleAvatar(child: new Text(item),),//左侧首字母图标显示，不显示则传null
       title: new Text('子item的标题'),//子item的标题
       subtitle: new Text('子item的内容'),//子item的内容
-      trailing: new Icon(Icons.arrow_right,color: Colors.green,),//显示右侧的箭头，不显示则传null
+      trailing: new Image(
+        image: new NetworkImage("https://pic2.zhimg.com/50/v2-6416ef6d3181117a0177275286fac8f3_hd.jpg"),
+        width: 100.0,
+        height: 100.0,
+      ),//显示右侧的箭头，不显示则传null
         onTap:(){
           Navigator.of(context).push(new MaterialPageRoute(
               builder: (context) {

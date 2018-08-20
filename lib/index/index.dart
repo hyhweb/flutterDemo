@@ -4,6 +4,7 @@ import '../global_config.dart';
 /*import '../home/home_page.dart';*/
 import '../home/home_page.dart';
 import '../list/listPage.dart';
+import '../login/login.dart';
 /*import '../market/market_page.dart';
 import '../notice/notice_page.dart';
 import '../my/my_page.dart';*/
@@ -35,21 +36,21 @@ class _IndexState extends State<Index> with TickerProviderStateMixin{
         title: new Text("列表"),
         vsync: this,
       ),
-/*      new NavigationIconView(
+      new NavigationIconView(
         icon: new Icon(Icons.add_shopping_cart),
-        title: new Text("市场"),
+        title: new Text("登录"),
         vsync: this,
       ),
-      new NavigationIconView(
+      /* new NavigationIconView(
         icon: new Icon(Icons.add_alert),
         title: new Text("通知"),
         vsync: this,
       ),*/
-      new NavigationIconView(
+   /*   new NavigationIconView(
         icon: new Icon(Icons.perm_identity),
         title: new Text("我的"),
         vsync: this,
-      ),
+      ),*/
     ];
     for (NavigationIconView view in _navigationViews) {
       view.controller.addListener(_rebuild);
@@ -59,6 +60,7 @@ class _IndexState extends State<Index> with TickerProviderStateMixin{
      // new HomePage(),
       new HomePage(),
       new ListPage(),
+      new LoginPage()
       /*new NoticePage(),
       new MyPage()*/
     ];

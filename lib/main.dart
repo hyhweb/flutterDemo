@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'index/index.dart';
-import 'list/listPage.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
